@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lato:300,400,700,900');
+
+.Button {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100px;
+    font: inherit;
+    padding: 4px !important;
+    margin: 4px !important;
+    text-align: center;
+}
+  
+.Btn > * {
+    transition: all 0.2s;
+}
+
+.Submit:focus,
+.Submit:hover {
+    transform: translateY(-3px);
+    animation: standOut 1.5s infinite;
+}
+
+.Delete:focus,
+.Delete:hover {
+    transform: translateY(-3px);
+    animation: standOut 1.5s infinite;
+}
+
+.Edit:focus,
+.Edit:hover {
+    transform: translateY(-3px);
+    animation: standOut 1.5s infinite;
+}
+
+.Enter {
+    width: 250px;
+    font-family: "Lato";
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: calc(18px + 2vmin);
+    font-weight: 300;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+    .Enter:focus,
+    .Enter:hover {
+        transform: skewY(3px);
+        box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.8);
+        /* animation: standOut 1.5s infinite; */
+    }
+
+/* @keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.20);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+} */
+
+@keyframes standOut {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    100% {
+        transform: scale(1.30);
+    }
+}
