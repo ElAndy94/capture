@@ -6,10 +6,10 @@ import Button from './components/UI/Button/Button';
 class App extends Component {
   render() {
     return (
-      <header className="App-header">
+      <div className="App-dashboard">
         <p> Capture Feelings </p>
         <Button btnType="Enter"> Start Exploring </Button>
-      </header>
+      </div>
     );
   }
 }
