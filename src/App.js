@@ -9,12 +9,14 @@ import Contact from './containers/Contact/Contact';
 import AboutMe from './containers/AboutMe/AboutMe';
 import Shop from './containers/Shop/Shop';
 import Tuition from './containers/Tuition/Tuition';
+import OpeningPage from './containers/OpeningPage/OpeningPage';
 
 class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route path="/" exact component={Dashboard} />
+        <Route path="/" exact component={OpeningPage} />
+        <Route path="/dashboard" exact component={Dashboard} />
         <Route path='/photography' component={Photography} />
         <Route path='/contact' component={Contact} />
         <Route path='/aboutMe' component={AboutMe} />
