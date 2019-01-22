@@ -10,3 +10,8 @@
     /* align-items: center; */
     /* justify-content: center;  */
 }
+
+#dash-title {
+    text-transform: uppercase;
+    color: white;
+}
