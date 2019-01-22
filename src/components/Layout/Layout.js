@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import Aux from '../../hoc/Aux';
 import './Layout.css';
@@ -10,7 +11,7 @@ class Layout extends Component {
     return (
       <Aux>
         {
-          this.props.isClear ?
+          this.props.accessedPage ?
           <div>
             <Toolbar />
             <main className="Content">{this.props.children}</main>
@@ -25,4 +26,8 @@ class Layout extends Component {
   };
 };
 
-export default Layout;
+const mapStateToProps = state => ({
+  accessedPage: state.auth.accessedPage,
+});
+
+export default connect(mapStateToProps, null)(Layout);

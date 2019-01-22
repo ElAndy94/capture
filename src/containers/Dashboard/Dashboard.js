@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import './Dashboard.css';
 import * as actions from '../../store/actions/index';
-import Button from '../../components/UI/Button/Button';
+// import Button from '../../components/UI/Button/Button';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -13,11 +13,11 @@ class Dashboard extends Component {
     this.state = {}
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.onAccessPage();
   }
 
-  onClicking() {
+  onClicking = () => {
     console.log(this.props.accessedPage);
   }
 
@@ -27,7 +27,7 @@ class Dashboard extends Component {
       <div className="background-img">
         <div className="container">
           <h1 id="dash-title">Hi</h1>
-          <Button btnType="Enter" clicked={this.onClicking}> Start Exploring </Button>
+          {/* <Button btnType="Enter" clicked={this.onClicking}> Start Exploring </Button> */}
         </div>
       </div>
     );
