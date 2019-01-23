@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 
-import './App.css';
 import Layout from './components/Layout/Layout';
 import OpeningPage from './containers/OpeningPage/OpeningPage';
 import Dashboard from './containers/Dashboard/Dashboard';

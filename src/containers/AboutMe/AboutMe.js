@@ -11,7 +11,7 @@ class AboutMe extends Component {
 
     render() {
         return(
-            <div>
+            <div className="background-img">
                 AboutMe
             </div>
         );

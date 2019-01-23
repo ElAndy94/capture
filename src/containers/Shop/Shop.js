@@ -11,7 +11,7 @@ class Shop extends Component {
 
     render() {
         return(
-            <div>
+            <div className="background-img">
                 Shop
             </div>
         );

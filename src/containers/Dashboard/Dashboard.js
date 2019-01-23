@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './Dashboard.css';
+import melissaImage from '../../assets/img/dashboard.jpg';
 import * as actions from '../../store/actions/index';
 // import Button from '../../components/UI/Button/Button';
 
@@ -17,16 +18,18 @@ class Dashboard extends Component {
     this.props.onAccessPage();
   }
 
-  onClicking = () => {
-    console.log(this.props.accessedPage);
-  }
-
   render() {
-
     return (
       <div className="background-img">
         <div className="container">
-          <h1 id="dash-title">Hi</h1>
+          <h1 id="dash-title">Peliza Photography</h1>
+          <div className="card mb-3 card-color">
+            <img src={melissaImage} className="card-img-top max-height" alt={"melissaImage"} />
+            <div className="card-body">
+              <h5 className="card-title">Landscape Photo</h5>
+              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
           {/* <Button btnType="Enter" clicked={this.onClicking}> Start Exploring </Button> */}
         </div>
       </div>
