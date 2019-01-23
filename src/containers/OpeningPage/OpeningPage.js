@@ -30,7 +30,7 @@ class OpeningPage extends Component {
         <Button btnType="Enter" clicked={this.onButtonClicked}> Start Exploring </Button>
       </div>
     );
-  }
+  };
 }
 
 export default withRouter(OpeningPage);
